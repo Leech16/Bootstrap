@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>   
+    <header>
+        <div class="nav-bar">
+            <div class="container d-flex justify-content-between">
+                <H1>Lies of <span>P</span></H1>
+                <nav>
+                    <ul class="nav nav-pills lista">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Atributos">Atributos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#OrgaosP">Orgãos P</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="Sobre">
+            <div class="container">
+            <h2>Sobre</h2>
+                <div id="carousel" class=" carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img src="Pictures/Lobby screen.png" alt="Lobby">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="Pictures/Arvore de ouro.png" alt="Arvore de ouro">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="Pictures/Hotel Krat.png" alt="Lobby">
+                        </div>
+                    </div>
+                    <Button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev"></Button>
+                    <Button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next"></Button>
+                    </div>
+            </div>
+        </section>
+        <section id="Atributos">
+            <div class="container">
+                <h2>Atributos</h2>
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active">Vitalidade</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link">Capacidade</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link">Fortitude</button>
+                </nav>
+                <div class="tab-content atributo-mae">
+                    <div class="tab-pane atributos active" id="aba1">
+                        É o atributo responsável por aumentar os pontos de vida. Cada nível dele contribui com suas chances de sobreviver aos golpes, o que o torna uma opção muito importante, especialmente no começo. No entanto, rapidamente os ganhos diminuem. Veja na tabela abaixo a partir de quais níveis os pontos de vida recebidos caem de patamar.
+                    </div>
+                    <div class="tab-pane atributos" id="aba2">
+                        Capacidade afeta positivamente dois aspectos: o Peso que Pinóquio consegue carregar, o que beneficia indiretamente a defesa ao permitir usar equipamentos mais pesados, e o máximo de Legião, medidor usado para as habilidades dos Braço Legionários.
+                    </div>
+                    <div class="tab-pane atributos" id="aba3">
+                        Fortitude é responsável pelo Vigor, que representa o limite físico de Pinóquio. Correr, defender e esquivar, assim como ataques leves, pesados e carregados consomem quantidades variadas de Vigor, uma medida recarregada automaticamente assim que o personagem fica inativo, recuperando o fôlego. Saber gerenciar esse recurso é parte crucial das lutas.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row" id="OrgaosP">
+            <h2>Orgãos P</h2>
+            <div class="col-lg-4 col-md-6 col-sm-12 item ">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>FASE 1</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                Quartzo
+                            </li>
+                            <li>
+                                Esquiva dupla
+                            </li>
+                            <li>
+                                +1 ponto de vida adicional
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 item">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>FASE 2</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                +2 Quartzo
+                            </li>
+                            <li>
+                                Esquiva Tripla
+                            </li>
+                            <li>
+                                +2 pontos de vida
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 item">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>FASE 3</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                adição de amuletos
+                            </li>
+                            <li>
+                                nova arma
+                            </li>
+                            <li>
+                                estamina elevada
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#carousel img{
+    max-width: 3000px;
+}
+
+body{
+    background-color:rgb(26, 10, 10);
+}
+
+section{
+    height: 100vh;
+    padding-top: 56px;
+    color: #eee;
+}
+
+header{
+    font-style: italic;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #c9b9a8;
+    color:rgb(26, 10, 10) ;
+}
+
+.lista li a{
+    color: rgb(26, 10, 10);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#Sobre{
+    padding-top: 10px;
+}
+header span{
+color: red;
+}
+
+#OrgaosP{
+    justify-content: space-between;
+}
+.item{
+    margin: 50px;
+    max-width: 500px;
+    
+}
+
+.atributos{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 350px;
+    font-size: 24px;
+
+}
+.atributo-mae{
+    align-items: center;
+}
+
+@media screen and (max-width:640px){
+    .lista li a{
+        font-size: 16px ;
+    }
+    #carousel img{
+        max-width: 500px;
+    }
+    section{
+        height: 40vh; 
+    }
+    .atributos{
+        padding-top: 25px;
+        font-size: 16px;
+        width: 300px;
+    }
+    .item{
+        max-width: 300px;
+        padding-bottom: 24px;
+    }
+    #OrgaosP{ 
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    #carousel img{
+        max-width: 1000px;
+    }
+    section{
+        height: 50vh;
+    }
+    .atributos{
+        padding-top: 50px;
+        font-size: 24px;
+        width: 500px;
+    }
+    .item{
+        margin: 55px;
+        max-width: 300px;
+        padding-bottom: 24px; 
+    }
+}
